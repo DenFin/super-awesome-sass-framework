@@ -10,3 +10,4 @@
 *.bak
 *.old
 .idea
+prepros.cfg
