@@ -235,8 +235,14 @@ figure {
       opacity: 0.8; }
 
 #hero {
-  background: blue;
-  color: yellow;
   padding: 15px 0; }
+
+#components #hero {
+  background: blue;
+  color: yellow; }
+
+#typography #hero {
+  background: red;
+  color: blue; }
 
 /*# sourceMappingURL=style.css.map */
