@@ -2,10 +2,13 @@
   width: 90%
   max-width: $container_max_width
   margin: 0 auto
+  +clearfix
 
 .row
   float: left
   margin: 0 -15px
+  width: 100%
+  +clearfix
 
 @for $i from 1 through $number_of_cols
   .col-1-#{$i}

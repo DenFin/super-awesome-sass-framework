@@ -48,14 +48,38 @@ img {
   max-width: 100%;
   height: auto; }
 
+input:focus {
+  outline: none; }
+
+input[type="submit"] {
+  background: #000;
+  color: #FFF;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  height: 35px;
+  padding: 0 30px;
+  transition: all 0.2s ease; }
+  input[type="submit"]:hover {
+    opacity: 0.8; }
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .row {
   float: left;
-  margin: 0 -15px; }
+  margin: 0 -15px;
+  width: 100%; }
+  .row::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .col-1-1 {
   width: 100%;
@@ -175,6 +199,22 @@ p.lead_text {
   font-size: 2rem;
   font-weight: lighter; }
 
+button.cta {
+  background: #000;
+  border: 0;
+  box-sizing: border-box;
+  color: yellow;
+  transition: opacity 0.2s ease; }
+  button.cta:hover {
+    opacity: 0.8; }
+  button.cta a {
+    color: #FFF;
+    display: block;
+    font-size: 2rem;
+    padding: 15px 60px;
+    text-decoration: none;
+    text-transform: uppercase; }
+
 .muted {
   color: #666; }
 
@@ -244,6 +284,16 @@ figure {
 .slide_in_bottom {
   transform: translateY(100%); }
 
+form label {
+  cursor: pointer;
+  display: block; }
+
+input[type="text"] {
+  display: block;
+  height: 30px;
+  padding: 0 5px;
+  margin-bottom: 5px; }
+
 #site_header {
   background: #000;
   color: #FFF;
@@ -275,5 +325,18 @@ figure {
 #typography #hero {
   background: red;
   color: blue; }
+
+#layout #hero {
+  background: purple;
+  color: yellow; }
+
+.black_box {
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px; }
+  .black_box:nth-child(2n+2) {
+    background: #333; }
 
 /*# sourceMappingURL=style.css.map */
